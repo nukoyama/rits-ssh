@@ -4,13 +4,17 @@ ritsのリモートサーバへのssh接続
 
 ## mac
 
+ritsにvpn接続する。
+- 参照： https://secure.ritsumei.ac.jp/rainbow/service-vpn/
+
 ターミナルを起動して
 ```sh
 ssh <Rainbow ID>@remote.ritsumei.ac.jp
 ```
-と打って、Rainbowのpasswordを入力。
+と打つ。
 
-以上
+何か聞かれるので `yes` と入力。
+その後Rainbowのpasswordを入力すればritsのlinuxに入れる。
 
 ## win
 
