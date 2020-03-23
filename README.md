@@ -20,3 +20,18 @@ ssh <Rainbow ID>@remote.ritsumei.ac.jp
 
 teraterm とかいうのを使えばいいらしい
 - https://secure.ritsumei.ac.jp/students/rainbow/manual-remotelogin/#step1
+
+## ログインシェルの変更
+
+[RAINBOWユーザーID設定ページ](https://idminfo.ritsumei.ac.jp/webmtn/sso-joint)から、
+[ユーザ設定] -> [ログインシェル] とタブを選んで、
+```
+/bin/bash
+```
+となっているところを、例えば
+```
+/bin/zsh
+```
+に変更する。あとは [保存] を押せばいい。
+
+参考：　https://secure.ritsumei.ac.jp/students/rainbow/manual-linuxloginshell/
