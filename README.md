@@ -54,3 +54,16 @@ scp -r <Rainbow ID>@remote.ritsumei.ac.jp:~ ~/local-dir
 自分のPCの `~/local-dir` ディレクトリにコピーされる。
 
 - 参考： https://webkaru.net/linux/scp-command/
+
+## Finder でサーバを開く？
+
+コマンドラインからだといろいろ不便なので、macOSのファイルブラウズアプリFinderでサーバへアクセスする。
+
+Homebrewを知らない人はググってインスコしてください。
+
+Homebrewで次の2つをインスコ：
+
+
+
+
+
