@@ -99,5 +99,5 @@ sshfs <Rainbow ID>@remote.ritsumei.ac.jp:<path to dir> ~/mount
 umount ~/mount
 ```
 
-
+- 参考：https://techracho.bpsinc.jp/hachi8833/2019_02_05/66454
 
