@@ -74,16 +74,10 @@ brew install sshfs
 
 マウントするディレクトリを作成：
 
-```sh
-mkdir ~/mount
-```
-
-ホームディレクトリに `mount` という名前のディレクトリを作成しました。
-
-インスコが終わったら、次のコマンドでサーバ先をマウントする：
+インスコが終わったら、次のコマンドでサーバ先を `~/Desktop/mount` へマウントする：
 
 ```sh
-sshfs <Rainbow ID>@remote.ritsumei.ac.jp:<path to dir> ~/mount
+sshfs <Rainbow ID>@remote.ritsumei.ac.jp:<path to dir> ~/Desktop/mount
 ```
 
 `<path to dir>` には、例えばサーバのルートから自分のホームディレクトリへの絶対パスを入力する。
@@ -96,7 +90,7 @@ sshfs <Rainbow ID>@remote.ritsumei.ac.jp:<path to dir> ~/mount
 最後に、アンマウントするには、Finderで開いている場合はウインドウを閉じてから、次のコマンドを入力：
 
 ```sh
-umount ~/mount
+umount ~/Desktop/mount
 ```
 
 - 参考：https://techracho.bpsinc.jp/hachi8833/2019_02_05/66454
