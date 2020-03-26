@@ -45,10 +45,10 @@ teraterm とかいうのを使えばいいらしい
 
 - 注：ssh接続は終了して、自分のPCのシェルで実行してください。
 
-リモートサーバのホームディレクトリを、ローカル（自分のPC）へ丸ごとコピー：
+リモートサーバのホームディレクトリ `~` 以下を、ローカル（自分のPC）へ丸ごとコピー：
 
 ```sh
-scp -r ~ <Rainbow ID>@remote.ritsumei.ac.jp ~/local-dir
+scp -r <Rainbow ID>@remote.ritsumei.ac.jp:~ ~/local-dir
 ```
 
 自分のPCの `~/local-dir` ディレクトリにコピーされる。
