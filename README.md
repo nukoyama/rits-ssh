@@ -16,7 +16,9 @@ ssh <Rainbow ID>@remote.ritsumei.ac.jp
 ```
 と打つ。
 
-何か聞かれるので `yes` と入力。
+`<Rainbow ID>` には自分のRainbow IDを入れる。
+
+多分、何か聞かれるので `yes` と入力。
 その後Rainbowのpasswordを入力すればritsのlinuxに入れる。
 
 ssh接続を終了するには `exit` と入力してエンター。
