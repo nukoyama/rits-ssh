@@ -1,6 +1,7 @@
 # rits-ssh
 ritsのリモートサーバへのssh接続
 
+## ssh接続
 
 ### mac
 
@@ -15,6 +16,8 @@ ssh <Rainbow ID>@remote.ritsumei.ac.jp
 
 何か聞かれるので `yes` と入力。
 その後Rainbowのpasswordを入力すればritsのlinuxに入れる。
+
+ssh接続を終了するには `exit` と入力してエンター。
 
 ### win
 
@@ -36,11 +39,11 @@ teraterm とかいうのを使えばいいらしい
 
 参考：　https://secure.ritsumei.ac.jp/students/rainbow/manual-linuxloginshell/
 
----
-
 ## ローカルへコピー
 
 `scp` コマンドを使う。
+
+- 注：ssh接続は終了して、自分のPCのシェルで実行してください。
 
 リモートサーバのホームディレクトリを、ローカル（自分のPC）へ丸ごとコピー：
 
