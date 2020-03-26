@@ -55,15 +55,45 @@ scp -r <Rainbow ID>@remote.ritsumei.ac.jp:~ ~/local-dir
 
 - 参考： https://webkaru.net/linux/scp-command/
 
-## Finder でサーバを開く？
+## マウント
 
-コマンドラインからだといろいろ不便なので、macOSのファイルブラウズアプリFinderでサーバへアクセスする。
+コマンドラインからだといろいろ不便なので、macOSのファイルブラウズアプリFinderでサーバのファイルをブラウズできるようにする。
 
-Homebrewを知らない人はググってインスコしてください。
+- 注：Homebrewを知らない人はググってインスコしてください。
 
 Homebrewで次の2つをインスコ：
 
+```sh
+brew cask install osxfuse
+brew install sshfs
+```
 
+マウントするディレクトリを作成：
+
+```sh
+mkdir ~/mount
+```
+
+ホームディレクトリに `mount` という名前のディレクトリを作成しました。
+
+インスコが終わったら、次のコマンドでサーバ先をマウントする：
+
+```sh
+sshfs <Rainbow ID>@remote.ritsumei.ac.jp:<path to dir> ~/mount
+```
+
+`<path to dir>` には、例えばサーバのルートから自分のホームディレクトリへの絶対パスを入力する。
+
+- 多分、2016年度入学の学生であれば `/homer/se/16/<Rainbow ID>` でいけるはず。
+- ssh接続して `pwd` コマンドを打てばルートからホームディレクトリへの絶対パスが表示されるので、それをメモっておくといい。
+
+また、セキュリティで文句を言われたら、システム環境設定を開いて、許可を出す。
+
+最後に、アンマウントするには、Finderで開いている場合はウインドウを閉じてから、次のコマンドを入力：
+
+```sh
+umount ~/mount
+```
 
 
 
