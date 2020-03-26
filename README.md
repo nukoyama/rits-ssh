@@ -72,8 +72,6 @@ brew cask install osxfuse
 brew install sshfs
 ```
 
-マウントするディレクトリを作成：
-
 インスコが終わったら、次のコマンドでサーバ先を `~/Desktop/mount` へマウントする：
 
 ```sh
