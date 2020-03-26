@@ -37,7 +37,7 @@ teraterm とかいうのを使えばいいらしい
 ```
 に変更する。あとは [保存] を押せばいい。
 
-参考：　https://secure.ritsumei.ac.jp/students/rainbow/manual-linuxloginshell/
+参考： https://secure.ritsumei.ac.jp/students/rainbow/manual-linuxloginshell/
 
 ## ローカルへコピー
 
@@ -52,3 +52,5 @@ scp -r ~ <Rainbow ID>@remote.ritsumei.ac.jp ~/local-dir
 ```
 
 自分のPCの `~/local-dir` ディレクトリにコピーされる。
+
+- 参考： https://webkaru.net/linux/scp-command/
