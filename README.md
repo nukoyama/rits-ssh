@@ -1,12 +1,14 @@
 # rits-ssh
-ritsのリモートサーバへのssh接続
+ritsのリモートサーバへのssh接続まとめ
 
 ## ssh接続
 
 ### mac
 
-ritsにvpn接続する。
+まず、ritsにvpn接続する。
 - 参照： https://secure.ritsumei.ac.jp/rainbow/service-vpn/
+
+以下、ritsにvpn接続しているものとして話を進める。
 
 ターミナルを起動して
 ```sh
